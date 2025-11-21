@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Stampede Prevention</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">SafeCrowd</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#prevention">Prevention</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="login-btn" id="openLogin">Login</div>
+  </nav>
+
+  <!-- Video Background -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <header id="home">
+    <h1>Smart Stampede Prevention</h1>
+    <p>
+      Using AI & IoT to monitor and prevent crowd disasters before they happen. 
+      Our system provides real-time alerts, crowd density monitoring, and safety measures for large gatherings.
+    </p>
+    <a href="#prevention">Learn More</a>
+  </header>
+
+  <!-- PREVENTION -->
+  <section id="prevention">
+    <h2>How We Prevent Stampedes</h2>
+    <p>
+      This section will describe how our system works. You can add your project’s code, algorithms, and visualization here. 
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of innovators passionate about building safer spaces for large gatherings. Our project, Smart Stampede Prevention System, combines Artificial Intelligence, IoT, and real-time monitoring to detect and prevent dangerous crowd situations before they turn into disasters.
+
+Our solution uses smart sensors, live data analysis, and AI-powered alerts to monitor crowd density, predict risks, and assist authorities in managing events more effectively. By blending cutting-edge technology with human-centered design, we aim to save lives, improve crowd management, and make public gatherings safer for everyone.
+
+This project is not just about technology—it’s about responsibility, safety, and innovation. Through this hackathon, we’re showcasing how AI and creativity can solve real-world problems and create a lasting social impact.
+</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to collaborate? Get in touch!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 SafeCrowd - Smart Stampede Prevention Project</p>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal" id="loginModal">
+    <div class="login-card">
+      <span class="close-btn" id="closeLogin">&times;</span>
+      <h2>Login to SafeCrowd</h2>
+      <form id="loginForm">
+        <div class="error-message" id="loginError"></div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" class="form-input" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" class="form-input" placeholder="Password" required>
+        </div>
+        <button type="submit" class="login-button">
+          <i class="fas fa-sign-in-alt"></i> Login
+        </button>
+      </form>
+      <p class="register-link">
+        Don't have an account? <a href="register.html">Register</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="homepage.js"></script>
+</body>
+</html>
